@@ -1,2 +1,2 @@
 # shut-up
-A drop-in batch file that blocks .exe files in the same directory from connecting to the internet
+A drop-in batch file that blocks `.exe` files in the same directory from connecting to the internet. Needs to be ran as administrator. Not recursive, will only work with .exe files at the same level in the directory structure. Inbound and outbound rules created by shut-up.bat are visible in `Windows Defender Firewall with Advanced Security` and begin with the string `Blocked With Batchfile`, and then specify the full path, e.g. `Blocked With Batchfile H:\test\program-that-phones-home.exe`
